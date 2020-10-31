@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Icons-->
-    <link rel="shortcut icon" type="image/x-icon" href="background/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="background/favicon.ico">
 
     <!--Notebook CSS-->
     <link rel="stylesheet" type="text/css" href="style/index.css?v=<?php echo time(); ?>">
@@ -31,7 +31,7 @@
     </div>
 </div>
 <header>
-    <a class="logo" href=></a>
+    <a class="logo" href=""><img src="background/" alt="logo"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="services.php">Services</a></li>
