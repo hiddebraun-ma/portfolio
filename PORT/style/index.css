@@ -179,6 +179,7 @@ header {
   color: #000000;
 }
 .btn::before{
+  z-index: -1;
   content: "";
   position: absolute;
   left: 0px;
