@@ -15,22 +15,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="background/favicon.png">
 
     <!--Notebook CSS-->
-    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css?v=<?php echo time(); ?>">
     <!--Scripts-->
-    <script type="text/javascript" src="js/mobilenav.js"></script><!-- Java Script for mobile nav. -->
-    <script type="text/javascript" src="js/music.js"></script><!-- Java Script for defining background music. -->
 </head>
 <body>
 <video id=video-comp1 poster=poster.JPG autoplay loop muted>
     <source src="background/comp1.mp4" type="video/mp4">
 </video><!-- Notebook.html background video.-->  
-
 <div id="mobile__menu" class="overlay">
     <a class="close">&times;</a>
     <div class="overlay__content">
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
+        <a href="services.php">Services</a>
+        <a href="project.php">Projects</a>
+        <a href="about.php">About</a>
     </div>
 </div>
 <header>
@@ -45,5 +42,6 @@
     <a class="cta" href="contact.php">Contact</a>
     <p class="menu cta">Menu</p>
 </header>
+    <script type="text/javascript" src="js/mobilenav.js"></script><!-- Java Script for mobile nav. -->
 </body>
 </html>
