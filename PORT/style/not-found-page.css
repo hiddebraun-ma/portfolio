@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    background-color: #171717;
+    font-family:"montserrat", sans-serif;
+  }
+
+header {
+    padding: 2rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(238, 238, 238);
+    text-align: center;
+  }
+
+
+.header404 {
+  font-size: 140px;
+}
+
+.info404 {
+  margin-top: 0.5rem;
+}
+
+p {
+  font-size: 14.5px;
+}
+
+footer {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+
+a {
+  color: rgb(223, 145, 0);
+}
