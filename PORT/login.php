@@ -1,5 +1,5 @@
 <?php
-    include_once 'header.php'
+    include_once "header.php"
 
 ?>
 
@@ -20,14 +20,14 @@
         $sql="select * from admin where User='".$uname."'AND Password='".$password."'
         limit 1";
 
-        $result=mysqli_query($sql);
+        $result=mysqli_query($con, $sql);
         
         if(mysqli_num_rows($result)==1){
-            echo " Succesful Log in";
+            echo " <p style='color:white;text-align:center;display:flex;flex-direction:column;height:80%;justify-content:center;'>Succesful Log in</p>";
             exit();
         }
         else{
-            echo " Invalid Password";
+            echo " <p style='color:white;text-align:center;display:flex;flex-direction:column;height:80%;justify-content:center;'>Invalid Password</p>";
             exit();
         }
     }
@@ -37,7 +37,7 @@
 <link rel="stylesheet" type="text/css" href="style/login.css?v=<?php echo time(); ?>">
 
 <section class="admin-login">
-    <form action="admin.php" method="post">
+    <form method="POST" action="#">
         <h2>Login</h2>
             <input type="text" class="form-control input" name="username" placeholder="Name..">
             <input type="password" class="form-control input" name="pwd" placeholder="Password..">
