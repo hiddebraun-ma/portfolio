@@ -8,7 +8,7 @@ body {
   height: 100vh;
   background: url('poster.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   }
 
   #video-comp1 {
@@ -35,7 +35,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 5%;
   background-color: none;
 }
 .logo {
@@ -210,18 +210,18 @@ header {
   height: 80%;
 }
 
-.admin-login {
-  margin-top: 3%;
-  height: 2%;
-  width: 7%;
-  text-align: center;
+::-webkit-scrollbar {
+  width: 5.6px;
 }
 
-.admin-login p{
-  font-size: 13px;
-  
+::-webkit-scrollbar-track {
+  background: rgb(22, 22, 22);
 }
 
-.admin-login a {
-  color: rgb(133, 133, 133);
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 179, 39);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(172, 112, 0);
 }
