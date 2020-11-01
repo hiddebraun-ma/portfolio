@@ -9,5 +9,8 @@
         </div><!-- Main button leading to Projects page.-->
         <div id="MyClockDisplay"><script type="text/javascript" src="js/clock.js"></script></div><!-- Java Script for clock. -->
     </div>
+    <div class="admin-login">
+        <a href="login.php"><p>Admin Login</p></a>
+    </div>
 </body>
 </html>

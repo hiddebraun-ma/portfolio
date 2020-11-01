@@ -37,7 +37,7 @@
 <link rel="stylesheet" type="text/css" href="style/login.css?v=<?php echo time(); ?>">
 
 <section class="admin-login">
-    <form method="POST" action="#">
+    <form method="POST" action="login.php">
         <h2>Login</h2>
             <input type="text" class="form-control input" name="username" placeholder="Name..">
             <input type="password" class="form-control input" name="pwd" placeholder="Password..">
