@@ -199,7 +199,6 @@ header {
 /* CSS for clock on index page */
 #MyClockDisplay {
   color: white; 
-  margin-bottom: -4rem;
   text-align: center;
 }
 
