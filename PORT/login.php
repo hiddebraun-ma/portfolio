@@ -4,34 +4,47 @@
 ?>
 
 <?php
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $dBName = "portfolio";
+// Save errors here
+$errors = [];
 
-    $con = mysqli_connect($host, $user, $password);
-    mysqli_select_db($con, $dBName) or die(mysqli_error($con));
+if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+}
 
-    if(isset($_POST['username'])){
+$host = "localhost";
+$root = "root";
+$password = "";
+$dBName = "portfolio";
 
-        $uname=$_POST['username'];
-        $password=$_POST['pwd'];
+$conn = mysqli_connect($host, $root, $password);
 
-        $sql="select * from admin where User='".$uname."'AND Password='".$password."'
-        limit 1";
+$sql = 'SELECT * FROM `admin` WHERE `User` = :username';
+$statement = $conn->prepare( $sql );
 
-        $result=mysqli_query($con, $sql);
-        
-        if(mysqli_num_rows($result)==1){
-            echo " <p style='color:white;text-align:center;display:flex;flex-direction:column;height:80%;justify-content:center;'>Succesful Log in</p>";
-            exit();
-        }
-        else{
-            echo " <p style='color:white;text-align:center;display:flex;flex-direction:column;height:80%;justify-content:center;'>Invalid Password</p>";
-            exit();
-        }
-    }
+$params = [
+    'username' => $username
+];
 
+$result = $statement->execute( $params );
+
+if ( $statement->rowCount() === 1 ) {
+    $user = $statement->fetch();
+} else {
+    $errors['email'] = 'Onbekend account';
+}
+
+if ( password_verify($password, $user['wachtwoord'])) {
+    session_start();
+    $_SESSION['user_id']  = $user['id'];
+    $_SESSION['voornaam'] = $user['voornaam'];
+
+    header( 'Location: admin.php');
+    exit();
+
+} else {
+    $errors['password'] = 'Invalid Password';
+}
 ?>
 
 <link rel="stylesheet" type="text/css" href="style/login.css?v=<?php echo time(); ?>">
@@ -40,7 +53,14 @@
     <form method="POST" action="login.php">
         <h2>Login</h2>
             <input type="text" class="form-control input" name="username" placeholder="Name..">
-            <input type="password" class="form-control input" name="pwd" placeholder="Password..">
+            <?php if (isset( $errors['username'] ) ): ?>
+                <span class="error"><?php echo $errors['username'] ?></span>
+            <?php endif; ?>
+
+            <input type="password" class="form-control input" name="password" placeholder="Password..">
+            <?php if (isset( $errors['password'] ) ): ?>
+                <span class="error"><?php echo $errors['password'] ?></span>
+            <?php endif; ?>
             <button type="submit" class="form-control submit" name="submit">Login</button>
     </form>
 </section>
