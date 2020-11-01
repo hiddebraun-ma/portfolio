@@ -31,7 +31,7 @@
     </div>
 </div>
 <header>
-    <a class="logo" href=""><img src="background/" alt="logo"></a>
+    <a class="logo" href="index.php"><img src="background/logo.png" alt="logo"></a>
         <nav>
             <ul class="nav__links">
                 <li><a href="services.php">Services</a></li>
