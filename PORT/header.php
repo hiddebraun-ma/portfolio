@@ -28,6 +28,7 @@
         <a href="services.php">Services</a>
         <a href="project.php">Projects</a>
         <a href="about.php">About</a>
+        <a href="index.php">Home</a>
     </div>
 </div>
 <header>
