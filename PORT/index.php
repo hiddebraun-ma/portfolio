@@ -10,7 +10,7 @@
         <div id="MyClockDisplay"><script type="text/javascript" src="js/clock.js"></script></div><!-- Java Script for clock. -->
     </div>
     <div class="admin-login">
-        <a href="login.php"><p>Admin Login</p></a>
+        <a href="login.php"><p>Admin</p></a>
     </div>
 </body>
 </html>

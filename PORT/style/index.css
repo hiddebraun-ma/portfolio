@@ -164,7 +164,7 @@ header {
 .btn {
   border: 1px solid #ffffff;
   background: none;
-  padding: 8px 17px;
+  padding: 3px 17px;
   font-size: 15px;
   cursor: pointer;
   margin: 10px;
@@ -218,11 +218,10 @@ header {
 }
 
 .admin-login p{
-  color: white;
   font-size: 13px;
   
 }
 
 .admin-login a {
-  color: rgb(255, 184, 52);
+  color: rgb(133, 133, 133);
 }
