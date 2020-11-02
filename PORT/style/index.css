@@ -9,6 +9,8 @@ body {
   background: url('poster.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
   }
 
   #video-comp1 {
@@ -234,7 +236,7 @@ header {
   display: block;
   color: rgb(230, 230, 230);
   margin-left: 5%;
-  margin-top: 8.9%;
+  margin-top: 12%;
   position: absolute;
 }
 
