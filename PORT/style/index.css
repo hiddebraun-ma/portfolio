@@ -14,7 +14,6 @@ body {
   #video-comp1 {
     position: fixed;
     z-index: -1;
-    background-clip: content-box;
   }
   @media (min-aspect-ratio: 1 16/9) {
     #video-comp1 {
@@ -224,4 +223,39 @@ header {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(172, 112, 0);
+}
+
+.content {
+  z-index: 4;
+  display: block;
+  color: rgb(230, 230, 230);
+  margin-left: 5%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+.content h2 {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.content h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content p {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.content a{
+  text-decoration: none;
+  color: #ffba52;
+  transition: all 0.4s;
+  margin-top: 10px;
+}
+
+.content a:hover {
+  color: #c57600;
 }
