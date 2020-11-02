@@ -7,7 +7,7 @@
         <h2>Hi I'm Vincent.</h2>
         <h1>I build value through design.</h1>
         <p>I'm a Dutch software developer who loves building digital products.</p>
-        <a href="about.html"><p>Learn more ></p></a>
+        <a href="about.html" class="learn-more"><p>Learn more ></p></a>
     </div>
     <div class="wrapper">
         <div class="button-container">

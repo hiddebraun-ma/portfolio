@@ -121,7 +121,7 @@ header {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #0088a9;
+  color: #ff9728;
 }
 .overlay .close {
   position: absolute;
@@ -199,6 +199,11 @@ header {
 #MyClockDisplay {
   color: white; 
   text-align: center;
+  transition: all 1s;
+}
+
+#MyClockDisplay:hover {
+  font-size: larger;
 }
 
 .wrapper {
@@ -226,11 +231,10 @@ header {
 }
 
 .content {
-  z-index: 4;
   display: block;
   color: rgb(230, 230, 230);
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 8.9%;
   position: absolute;
 }
 
@@ -256,6 +260,11 @@ header {
   margin-top: 10px;
 }
 
-.content a:hover {
+.content p {
+  transition: all 0.5s;
+}
+
+.content .learn-more p:hover {
   color: #c57600;
+  font-size: 13.4px;
 }
