@@ -15,13 +15,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="background/favicon.ico">
 
     <!--Notebook CSS-->
-    <link rel="stylesheet" type="text/css" href="style/index.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="style/header.css?v=<?php echo time(); ?>">
     <!--Scripts-->
 </head>
 <body>
-<video id=video-comp1 poster=poster.JPG autoplay loop muted>
-    <source src="background/2123.mp4" type="video/mp4">
-</video><!-- Notebook.html background video.-->  
 <div id="mobile__menu" class="overlay">
     <a class="close">&times;</a>
     <div class="overlay__content">
