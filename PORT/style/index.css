@@ -73,11 +73,6 @@ body {
 #MyClockDisplay {
   color: white; 
   text-align: center;
-  transition: all 1s;
-}
-
-#MyClockDisplay:hover {
-  font-size: larger;
 }
 
 .index-wrapper {
