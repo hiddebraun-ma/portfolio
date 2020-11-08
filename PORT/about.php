@@ -12,7 +12,7 @@
     <div class="container">
         <div class="topbar">
             <div class="circles">
-                <div class="circle1"></div>
+                <a href="https://github.com/vincpinas/portfolio"><div class="circle1"></div></a>
                 <div class="circle2"></div>
                 <div class="circle3"></div>
             </div>
